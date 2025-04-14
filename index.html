@@ -1,13 +1,13 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Marmitaria Pimenta Doce</title>
+  <title>Marmitaria Pimenta Doce | Comida Caseira Todo Dia</title>
   <style>
     :root {
       --vermelho: #c82333;
+      --verde-whats: #25D366;
     }
 
     * {
@@ -42,9 +42,10 @@
       background-image: url('marmitas.jpg');
       background-size: cover;
       background-position: center;
-      padding: 6rem 2rem;
+      padding: 6rem 2rem 8rem;
       color: white;
       text-align: center;
+      position: relative;
     }
 
     .hero h1 {
@@ -58,6 +59,42 @@
       max-width: 600px;
       margin: auto;
       text-shadow: 1px 1px 4px #000;
+    }
+
+    .cta-buttons {
+      margin-top: 2.5rem;
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .cta-buttons a {
+      text-decoration: none;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      font-weight: bold;
+      color: white;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: transform 0.2s ease, background-color 0.2s ease;
+    }
+
+    .cta-buttons a:hover {
+      transform: scale(1.05);
+    }
+
+    .order {
+      background-color: var(--vermelho);
+    }
+
+    .whatsapp {
+      background-color: var(--verde-whats);
+    }
+
+    .cta-buttons img {
+      height: 20px;
     }
 
     .section {
@@ -77,37 +114,6 @@
       font-size: 1.1rem;
       color: #555;
       margin-bottom: 1rem;
-    }
-
-    .buttons {
-      margin-top: 2rem;
-      display: flex;
-      gap: 1.5rem;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    .buttons a {
-      text-decoration: none;
-      padding: 1rem 2rem;
-      border-radius: 8px;
-      font-weight: bold;
-      color: white;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-
-    .whatsapp {
-      background-color: #25D366;
-    }
-
-    .order {
-      background-color: var(--vermelho);
-    }
-
-    .buttons img {
-      height: 20px;
     }
 
     .cards {
@@ -142,19 +148,21 @@
   <section class="hero">
     <h1>Comida caseira, saudável e cheia de sabor</h1>
     <p>Todos os dias, entregamos refeições equilibradas com gostinho de comida feita em casa.</p>
+    <div class="cta-buttons">
+      <a href="https://marmitariapimentadoce.goomer.app" class="order" target="_blank">
+        🍽️ Pedir Agora
+      </a>
+      <a href="https://wa.me/5541992589557" class="whatsapp" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp"> Falar no WhatsApp
+      </a>
+    </div>
   </section>
 
   <section class="section">
     <h2>Somos apaixonados por comida boa</h2>
-    <p>Na Marmitaria Pimenta Doce, acreditamos que uma boa refeição pode transformar o seu dia.
-       Utilizamos ingredientes frescos, temperos naturais e receitas feitas com muito carinho para oferecer saúde e sabor em cada marmita.</p>
+    <p>Utilizamos ingredientes frescos, temperos naturais e receitas feitas com muito carinho para oferecer saúde e sabor em cada marmita.</p>
     <p>Seja no trabalho, em casa ou onde estiver, leve o sabor da comida caseira com você.</p>
-
-<div class="buttons">
-  <a href="https://marmitariapimentadoce.goomer.app" class="order" target="_blank">
-    Pedir Agora
-  </a>
-</div>
+  </section>
 
   <section class="section">
     <h2>Nosso Cardápio</h2>
@@ -175,11 +183,6 @@
   </section>
 
   <section class="section">
-    <h2>Missão da Empresa</h2>
-    <p>Promover qualidade de vida através de refeições práticas, saudáveis e saborosas, com carinho em cada detalhe. Queremos ser referência em alimentação caseira no Brasil.</p>
-  </section>
-
-  <section class="section">
     <h2>Depoimentos de Clientes</h2>
     <div class="cards">
       <div class="card">
@@ -194,12 +197,11 @@
     </div>
   </section>
 
-<div class="buttons">
-  <a href="https://wa.me/5541992589557" class="whatsapp" target="_blank">
-    <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp"> Falar por WhatsApp
-  </a>
-</div>
-
+  <section class="section">
+    <h2>Nossa Missão</h2>
+    <p>Promover qualidade de vida através de refeições práticas, saudáveis e saborosas, com carinho em cada detalhe.</p>
+    <p>Queremos ser referência em alimentação caseira no Brasil.</p>
+  </section>
 
   <footer>
     &copy; 2025 Marmitaria Pimenta Doce. Todos os direitos reservados.
